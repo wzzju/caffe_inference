@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <chrono>
 #include "cnpy.h"
 #include "utilities.h"
 #include "helper.h"
@@ -29,7 +28,7 @@ void test_net_single() {
             max_i = i;
         }
     }
-    cout << "max prob: " << max << ", class: " << max_i << endl;
+    cout << "Max prob : " << max << ",  Class : " << max_i << endl;
 }
 
 //CORRECT: 9916
@@ -74,9 +73,9 @@ void test_net_acc() {
             correct++;
         total++;
     }
-    cout << "CORRECT: " << correct << endl;
-    cout << "TOTAL: " << total << endl;
-    cout << "ACCURACY: " << (double) correct / (double) total << endl;
+    cout << "CORRECT : " << correct << endl;
+    cout << "TOTAL : " << total << endl;
+    cout << "ACCURACY : " << (double) correct / (double) total << endl;
 }
 
 int main() {
