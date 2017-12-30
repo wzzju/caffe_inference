@@ -16,11 +16,10 @@ namespace helper {
     public:
         InnerScopeExit(const FuncType _func) : func(_func) {}
 
-        ~InnerScopeExit() { if (!dismissed) { func(); }}
+        ~InnerScopeExit() { func(); }
 
     private:
         FuncType func;
-        bool dismissed = false;
     };
 
     template<typename F>
@@ -30,8 +29,8 @@ namespace helper {
 }
 #define DO_STRING_JOIN(arg1, arg2) arg1 ## arg2
 #define STRING_JOIN(arg1, arg2) DO_STRING_JOIN(arg1, arg2)
-// SCOPEEXIT宏的作用：无论这个宏出现在何处，它总是在退出其所在的scope之后才执行code指定的代码。
-#define SCOPEEXIT(code) auto STRING_JOIN(scope_exit_object_, __LINE__) = helper::MakeScopeExit([&](){code;});
+// SCOPE_EXIT宏的作用：无论这个宏出现在何处，它总是在scope结束处才执行code指定的代码。
+#define SCOPE_EXIT(code) auto STRING_JOIN(scope_exit_object_, __LINE__) = helper::MakeScopeExit([&](){code;});
 
 // 计算代码在一定scope内执行所耗费的时间
 class CostTimeHelper {

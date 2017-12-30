@@ -12,7 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87d06545-e8a4-49cf-99da-0e204cda7d83" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/bin/caffe_inference" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/caffe_inference" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/helper.h" afterPath="$PROJECT_DIR$/include/helper.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,10 +29,23 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+            <state relative-caret-position="458">
+              <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/helper.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="e#204#223#0" expanded="true" />
+                <element signature="e#421#433#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,12 +66,12 @@
         <option value="$PROJECT_DIR$/layers/softmax_layer.cpp" />
         <option value="$PROJECT_DIR$/net.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/include/helper.h" />
         <option value="$PROJECT_DIR$/include/layers/relu_layer.h" />
         <option value="$PROJECT_DIR$/include/layers/pooling_layer.h" />
         <option value="$PROJECT_DIR$/include/layers/softmax_layer.h" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/include/helper.h" />
       </list>
     </option>
   </component>
@@ -99,12 +114,6 @@
               <item name="caffe_inference" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="caffe_inference" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caffe_inference" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="caffe_inference" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="layers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caffe_inference" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
@@ -165,12 +174,12 @@
       <option name="presentableId" value="Default" />
       <updated>1514624937869</updated>
       <workItem from="1514624939055" duration="4654000" />
-      <workItem from="1514632577433" duration="3473000" />
+      <workItem from="1514632577433" duration="5861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8127000" />
+    <option name="totallyTimeSpent" value="10515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -441,20 +450,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/helper.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <element signature="e#98#115#0" expanded="true" />
             <element signature="e#204#223#0" expanded="true" />
-            <element signature="e#472#484#0" expanded="true" />
+            <element signature="e#421#433#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+        <state relative-caret-position="458">
+          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
