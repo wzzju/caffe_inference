@@ -3,6 +3,7 @@
 #include <chrono>
 #include "cnpy.h"
 #include "utilities.h"
+#include "helper.h"
 #include "net.h"
 
 using namespace std;
@@ -28,7 +29,7 @@ void test_net_single() {
             max_i = i;
         }
     }
-    cerr << "max prob: " << max << ", class: " << max_i << endl;
+    cout << "max prob: " << max << ", class: " << max_i << endl;
 }
 
 //CORRECT: 9916
@@ -79,12 +80,19 @@ void test_net_acc() {
 }
 
 int main() {
-//    test_net_single();
-    auto start = system_clock::now();
-    test_net_acc();
-    auto end = system_clock::now();
-    auto duration = duration_cast<microseconds>(end - start);
-    cerr << "Cost " << static_cast<double>(duration.count()) * microseconds::period::num / microseconds::period::den
-         << " seconds" << endl;
+//    auto start = system_clock::now();
+//    test_net_acc();
+//    auto end = system_clock::now();
+//    auto duration = duration_cast<microseconds>(end - start);
+//    cerr << "Cost " << static_cast<double>(duration.count()) * microseconds::period::num / microseconds::period::den
+//         << " seconds" << endl;
+    {
+        CostTimeHelper timeHelper("test_net_single");
+        test_net_single();
+    }
+    {
+        CostTimeHelper timeHelper("test_net_acc");
+        test_net_acc();
+    }
     return 0;
 }
