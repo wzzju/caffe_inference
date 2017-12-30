@@ -6,7 +6,6 @@
 #include "net.h"
 
 using namespace std;
-using namespace chrono;
 
 void test_net_single() {
     /****************************构建网络****************************/
@@ -79,11 +78,11 @@ void test_net_acc() {
 }
 
 int main() {
-//    auto start = system_clock::now();
+//    auto start = std::chrono::system_clock::now();
 //    test_net_acc();
-//    auto end = system_clock::now();
-//    auto duration = duration_cast<microseconds>(end - start);
-//    cerr << "Cost " << static_cast<double>(duration.count()) * microseconds::period::num / microseconds::period::den
+//    auto end = std::chrono::system_clock::now();
+//    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+//    cout << "Cost " << static_cast<double>(duration.count()) * std::chrono::microseconds::period::num / std::chrono::microseconds::period::den
 //         << " seconds" << endl;
     {
         CostTimeHelper timeHelper("test_net_single");
